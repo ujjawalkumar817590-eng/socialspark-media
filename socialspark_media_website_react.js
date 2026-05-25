@@ -180,7 +180,6 @@ function SocialSparkMedia() {
     </div>
   );
 }
-
-// CRITICAL STEP: React component ko HTML ke root me render karne ka direct tarika
-const root = banknotes = ReactDOM.createRoot(document.getElementById('root'));
+// Yeh bilkul sahi line hai
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<SocialSparkMedia />);
