@@ -1,4 +1,4 @@
-export default function SocialSparkMedia() {
+export default function socialsparkmedia() {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
