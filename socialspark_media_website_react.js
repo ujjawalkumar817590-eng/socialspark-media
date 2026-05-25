@@ -1,4 +1,5 @@
-export default function src/socialsparkmedia() {
+// Browser-friendly React Component (No invalid function name)
+function SocialSparkMedia() {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
@@ -17,10 +18,7 @@ export default function src/socialsparkmedia() {
       </header>
 
       {/* Hero Section */}
-      <section
-        id="home"
-        className="px-8 py-24 md:py-36 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center"
-      >
+      <section id="home" className="px-8 py-24 md:py-36 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div>
           <p className="text-purple-400 font-semibold mb-4 uppercase tracking-widest">
             Social Media Growth Agency
@@ -36,17 +34,11 @@ export default function src/socialsparkmedia() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a
-              href="https://wa.me/919999999999"
-              className="bg-purple-500 hover:bg-purple-600 transition px-8 py-4 rounded-2xl font-semibold shadow-lg"
-            >
+            <a href="https://wa.me/919999999999" className="bg-purple-500 hover:bg-purple-600 transition px-8 py-4 rounded-2xl font-semibold shadow-lg">
               Contact on WhatsApp
             </a>
 
-            <a
-              href="#services"
-              className="border border-gray-700 hover:border-purple-400 hover:text-purple-400 transition px-8 py-4 rounded-2xl font-semibold"
-            >
+            <a href="#services" className="border border-gray-700 hover:border-purple-400 hover:text-purple-400 transition px-8 py-4 rounded-2xl font-semibold">
               Explore Services
             </a>
           </div>
@@ -84,7 +76,6 @@ export default function src/socialsparkmedia() {
             <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">
               Our Services
             </p>
-
             <h2 className="text-4xl md:text-5xl font-bold">
               Everything You Need To Grow Online
             </h2>
@@ -92,42 +83,16 @@ export default function src/socialsparkmedia() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              {
-                title: 'Instagram Management',
-                desc: 'Complete account handling, content planning, engagement, and growth strategies.'
-              },
-              {
-                title: 'Reels Editing',
-                desc: 'High-retention reels with trendy edits, captions, transitions, and hooks.'
-              },
-              {
-                title: 'YouTube Management',
-                desc: 'Video optimization, thumbnails, content ideas, SEO, and channel management.'
-              },
-              {
-                title: 'Branding & Design',
-                desc: 'Modern post designs, logos, thumbnails, and visual branding systems.'
-              },
-              {
-                title: 'Content Strategy',
-                desc: 'Monthly content calendars and audience-focused growth planning.'
-              },
-              {
-                title: 'Paid Ads',
-                desc: 'Run targeted Instagram and Facebook ads for better leads and conversions.'
-              }
+              { title: 'Instagram Management', desc: 'Complete account handling, content planning, engagement, and growth strategies.' },
+              { title: 'Reels Editing', desc: 'High-retention reels with trendy edits, captions, transitions, and hooks.' },
+              { title: 'YouTube Management', desc: 'Video optimization, thumbnails, content ideas, SEO, and channel management.' },
+              { title: 'Branding & Design', desc: 'Modern post designs, logos, thumbnails, and visual branding systems.' },
+              { title: 'Content Strategy', desc: 'Monthly content calendars and audience-focused growth planning.' },
+              { title: 'Paid Ads', desc: 'Run targeted Instagram and Facebook ads for better leads and conversions.' }
             ].map((service, index) => (
-              <div
-                key={index}
-                className="bg-black border border-gray-800 hover:border-purple-500 transition rounded-3xl p-8 shadow-xl"
-              >
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">
-                  {service.title}
-                </h3>
-
-                <p className="text-gray-400 leading-relaxed">
-                  {service.desc}
-                </p>
+              <div key={index} className="bg-black border border-gray-800 hover:border-purple-500 transition rounded-3xl p-8 shadow-xl">
+                <h3 className="text-2xl font-bold mb-4 text-purple-400">{service.title}</h3>
+                <p className="text-gray-400 leading-relaxed">{service.desc}</p>
               </div>
             ))}
           </div>
@@ -137,26 +102,14 @@ export default function src/socialsparkmedia() {
       {/* About */}
       <section id="about" className="px-8 py-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div>
-          <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
-            alt="Team"
-            className="rounded-3xl shadow-2xl"
-          />
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Team" className="rounded-3xl shadow-2xl" />
         </div>
-
         <div>
-          <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">
-            About Us
-          </p>
-
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            We Build Attention For Your Brand
-          </h2>
-
+          <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">About Us</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">We Build Attention For Your Brand</h2>
           <p className="text-gray-400 leading-relaxed mb-6 text-lg">
             SocialSpark Media is a modern social media agency focused on helping businesses and creators build powerful online brands. From viral reels to complete account management, we help you grow faster and smarter.
           </p>
-
           <p className="text-gray-400 leading-relaxed text-lg">
             Our mission is simple — create content that gets attention, builds trust, and drives real business results.
           </p>
@@ -167,33 +120,17 @@ export default function src/socialsparkmedia() {
       <section id="portfolio" className="px-8 py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">
-              Portfolio
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-bold">
-              Recent Creative Work
-            </h2>
+            <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">Portfolio</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Recent Creative Work</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              'Instagram Growth Campaign',
-              'YouTube Branding Project',
-              'Viral Reels Editing',
-            ].map((project, index) => (
-              <div
-                key={index}
-                className="bg-black rounded-3xl overflow-hidden border border-gray-800 hover:border-purple-500 transition"
-              >
+            {['Instagram Growth Campaign', 'YouTube Branding Project', 'Viral Reels Editing'].map((project, index) => (
+              <div key={index} className="bg-black rounded-3xl overflow-hidden border border-gray-800 hover:border-purple-500 transition">
                 <div className="h-56 bg-gradient-to-br from-purple-500 to-pink-500"></div>
-
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3">{project}</h3>
-
-                  <p className="text-gray-400">
-                    Creative social media campaign designed to increase engagement and reach.
-                  </p>
+                  <p className="text-gray-400">Creative social media campaign designed to increase engagement and reach.</p>
                 </div>
               </div>
             ))}
@@ -204,18 +141,11 @@ export default function src/socialsparkmedia() {
       {/* CTA */}
       <section className="px-8 py-24 max-w-5xl mx-auto text-center">
         <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl p-12 shadow-2xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready To Grow Your Brand?
-          </h2>
-
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready To Grow Your Brand?</h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto mb-8">
             Let SocialSpark Media help you create powerful content and grow your audience across Instagram, YouTube, and more.
           </p>
-
-          <a
-            href="https://wa.me/919999999999"
-            className="inline-block bg-black hover:bg-gray-900 transition px-10 py-4 rounded-2xl font-semibold"
-          >
+          <a href="https://wa.me/919999999999" className="inline-block bg-black hover:bg-gray-900 transition px-10 py-4 rounded-2xl font-semibold">
             Start Your Project
           </a>
         </div>
@@ -224,25 +154,17 @@ export default function src/socialsparkmedia() {
       {/* Contact */}
       <section id="contact" className="px-8 py-24 bg-gray-950">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">
-            Contact Us
-          </p>
-
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            Let's Work Together
-          </h2>
-
+          <p className="text-purple-400 uppercase tracking-widest font-semibold mb-4">Contact Us</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Let's Work Together</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-black border border-gray-800 rounded-2xl p-6">
               <h3 className="text-xl font-bold mb-3 text-purple-400">WhatsApp</h3>
               <p className="text-gray-400">+91 99999 99999</p>
             </div>
-
             <div className="bg-black border border-gray-800 rounded-2xl p-6">
               <h3 className="text-xl font-bold mb-3 text-purple-400">Instagram</h3>
               <p className="text-gray-400">@socialsparkmedia</p>
             </div>
-
             <div className="bg-black border border-gray-800 rounded-2xl p-6">
               <h3 className="text-xl font-bold mb-3 text-purple-400">Email</h3>
               <p className="text-gray-400">hello@socialsparkmedia.com</p>
@@ -256,5 +178,9 @@ export default function src/socialsparkmedia() {
         © 2026 SocialSpark Media. All rights reserved.
       </footer>
     </div>
-  )
+  );
 }
+
+// CRITICAL STEP: React component ko HTML ke root me render karne ka direct tarika
+const root = banknotes = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<SocialSparkMedia />);
